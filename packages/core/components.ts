@@ -1,4 +1,4 @@
-import { XButton } from "@x-ui/components";
+import { XButton, XButtonGroup, XIcon } from "@o-ui/components";
 import type { Plugin } from "vue";
 
-export default [XButton] as Plugin[];
+export default [XButton, XButtonGroup, XIcon] as Plugin[];

@@ -1,8 +1,11 @@
-import { makeInstaller } from '@x-ui/utils'
+import { makeInstaller } from '@o-ui/utils'
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import components from './components'
-import '@x-ui/theme/index.css'
+import '@o-ui/theme/index.css'
 
+library.add(fas);
 const installer = makeInstaller(components)
 
-export * from '@x-ui/components'
+export * from '@o-ui/components'
 export default installer

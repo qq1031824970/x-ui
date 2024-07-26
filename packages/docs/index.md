@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "x-ui"
-  text: "初试自建组件库"
+  name: 'o-ui'
+  text: '初试自建组件库'
   tagline: My great project tagline
   actions:
     - theme: brand
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
