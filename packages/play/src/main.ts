@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import XUi from 'o-ui'
-import 'o-ui/dist/index.css'
+import XAnything from 'x-anything'
+import 'x-anything/dist/index.css'
+// import XAnything from '../../core/index'
 
-createApp(App).use(XUi).mount('#app')
+
+
+
+createApp(App).use(XAnything).mount('#app')

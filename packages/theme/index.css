@@ -4,7 +4,13 @@
   /* colors */
   --x-color-white: #ffffff;
   --x-color-black: #000000;
-  --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
+  --colors: (
+    primary: #409eff,
+    success: #67c23a,
+    warning: #e6a23c,
+    danger: #f56c6c,
+    info: #909399
+  );
   --x-bg-color: #ffffff;
   --x-bg-color-page: #f2f3f5;
   --x-bg-color-overlay: #ffffff;
@@ -26,7 +32,7 @@
   --x-fill-color-dark: #ebedf0;
   --x-fill-color-darker: #e6e8eb;
   --x-fill-color-blank: #ffffff;
-  
+
   @each $val, $color in var(--colors) {
     --x-color-$(val): $(color);
     @for $i from 3 to 9 {
@@ -52,8 +58,9 @@
   --x-font-size-base: 14px;
   --x-font-size-small: 13px;
   --x-font-size-extra-small: 12px;
-  --x-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
-    'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  --x-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial,
+    sans-serif;
   --x-font-weight-primary: 500;
 
   /*disabled*/
@@ -64,4 +71,94 @@
   /*animation*/
   --x-transition-duration: 0.4s;
   --x-transition-duration-fast: 0.2s;
+}
+
+.fade-enter-active {
+  animation: slideUpIn 0.2s;
+  animation-play-state: running;
+}
+.fade-leave-active {
+  animation: slideUpIn 0.2s reverse;
+  animation-play-state: running;
+}
+
+@keyframes slideUpIn {
+  0% {
+    transform: scaleY(0.8);
+    transform-origin: 0% 0%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+.x-select-dropdown-content {
+  min-width: 320px;
+  background-color: #fff;
+  box-shadow: 0 5px 12px rgba(31, 45, 61, 0.122);
+  border-radius: 2px;
+
+  .x-select-search-wrapper {
+    .x-select-search-input {
+      width: 100%;
+      margin-top: 4px;
+      padding: 6px 8px;
+      outline: 0;
+      border: 0;
+      height: 32px;
+      border-bottom: solid 1px var(--x-border-color);
+      transition: border-color 0.2s linear;
+
+      &:hover,
+      &:focus {
+        border-bottom: solid 1px var(--x-color-primary);
+      }
+    }
+  }
+}
+.x-select-options-scroller {
+  height: 340px;
+}
+.x-select-option {
+  padding: 6px 12px 6px 16px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.vue-recycle-scroller__item-view {
+  &.hover {
+    .x-select-option {
+      background-color: #f0f2f6;
+    }
+  }
+  .selected {
+    .x-select-option {
+      color: var(--x-text-color-disabled);
+      background-color: initial;
+      cursor: not-allowed;
+    }
+  }
+}
+.x-select-options-description {
+  padding: 16px;
+  min-width: 80px;
+  width: 320px;
+  max-height: 400px;
+  background: #fff;
+  box-shadow: 0 5px 12px rgba(31, 45, 61, 0.122);
+  border-radius: 2px;
+  word-break: break-all;
+}
+.x-select-options-description-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.x-select-options-description-content {
+  color: var(--x-text-color-secondary);
 }

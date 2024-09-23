@@ -2,8 +2,8 @@ import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 import { fn, within, userEvent, expect, clearAllMocks } from "@storybook/test";
 import { set } from "lodash-es";
 
-import { XButton, XButtonGroup } from "o-ui";
-import 'o-ui/dist/index.css';
+import { XButton, XButtonGroup } from "x-anything";
+import 'x-anything/dist/index.css';
 
 type Story = StoryObj<typeof XButton> & { argTypes?: ArgTypes };
 

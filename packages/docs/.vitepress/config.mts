@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "o-ui",
+  title: "x-anything",
   description: "初试自建组件库",
-  base: "/o-ui/",
+  base: "/x-anything/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

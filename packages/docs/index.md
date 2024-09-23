@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: 'o-ui'
+  name: 'x-anything'
   text: '初试自建组件库'
   tagline: My great project tagline
   actions:

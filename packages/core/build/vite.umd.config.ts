@@ -52,7 +52,7 @@ export default defineConfig({
     outDir: "dist/umd",
     lib: {
       entry: resolve(__dirname, "../index.ts"),
-      name: "XUi",
+      name: "XAnything",
       fileName: "index",
       formats: ["umd"],
     },

@@ -1,0 +1,39 @@
+.x-select {
+  --x-button-border-color: var(--x-border-color);
+}
+
+.x-select {
+  width: fit-content;
+  min-width: 120px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 11px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid var(--x-button-border-color);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  &.is-focus {
+    border-color: var(--x-color-primary);
+    box-shadow: 0 0 0 2px var(--x-color-primary-light-8);
+    border-right-width: 1px !important;
+    outline: 0;
+  }
+}
+.x-select-text {
+  flex: auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.x-select-clear {
+  margin-left: 4px;
+  color: var(--x-border-color-darker);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--x-color-primary);
+  }
+}
