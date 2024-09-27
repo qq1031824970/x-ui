@@ -28,7 +28,7 @@
     ],
     "baseUrl": "./",
     "paths": {
-      "@toy-element/components": [
+      "@x-anything/components": [
         "./packages/components"
       ]
     }

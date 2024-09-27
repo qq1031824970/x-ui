@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "x-anything",
   description: "初试自建组件库",
-  base: "/x-anything/",
+  base: "/x-ui/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

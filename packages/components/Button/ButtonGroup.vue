@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { ButtonGroupProps } from './types'
 import { provide, reactive, toRef } from 'vue'
 import { BUTTON_GROUP_CTX_KEY } from './contants'

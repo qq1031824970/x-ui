@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { IconProps } from './types'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { omit } from 'lodash-es'

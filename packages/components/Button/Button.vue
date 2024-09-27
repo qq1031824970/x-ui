@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ref, computed, inject } from 'vue'
 import type { ButtonProps, ButtonEmits, ButtonInstance } from './types'
 import { throttle } from 'lodash-es'
