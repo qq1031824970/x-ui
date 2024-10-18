@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 import { readdirSync, readdir } from "fs";
 import { delay, defer, filter, map } from "lodash-es";
-// import { visualizer } from "rollup-plugin-visualizer";
+import { visualizer } from "rollup-plugin-visualizer";
 
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
@@ -35,9 +35,9 @@ function moveStyles() {
 export default defineConfig({
   plugins: [
     vue(),
-    // visualizer({
-    //   filename: "dist/stats.es.html",
-    // }),
+    visualizer({
+      filename: "dist/stats.es.html",
+    }),
     dts({
       tsconfigPath: "../../tsconfig.build.json",
       outDir: "dist/types",

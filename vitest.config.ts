@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 // import { defineConfig } from "vite";
+import { resolve } from "path";
 import { coverageConfigDefaults, defineConfig } from 'vitest/config'
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
@@ -13,11 +14,11 @@ export default defineConfig({
     TEST: JSON.stringify(true)
   },
   test: {
+    globals: true,
+    environment: "jsdom",
     coverage: {
       exclude: ['**/Select/**', ...coverageConfigDefaults.exclude],
     },
-    globals: true,
-    environment: "jsdom",
+    setupFiles: [resolve(__dirname, "./vitest.setup.ts")],
   },
-
 });

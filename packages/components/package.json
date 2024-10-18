@@ -8,10 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@vitest/coverage-v8": "^1.6.0",
-    "@vue/test-utils": "^2.4.6",
-    "jsdom": "^24.1.1"
-  }
+  "license": "ISC"
 }

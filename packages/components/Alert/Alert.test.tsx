@@ -2,7 +2,7 @@ import type { AlertType } from './types'
 
 import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { withInstall } from '@toy-element/utils'
+import { withInstall } from '@x-anything/utils'
 import { XAlert } from './index'
 
 import Alert from './Alert.vue'
@@ -134,23 +134,23 @@ describe('Alert.vue', () => {
   })
 })
 
-// describe('Alert/index', () => {
-//   it('should be exported with withInstall()', () => {
-//     expect(XAlert.install).toBeDefined()
-//   })
-//   it('component should be exported', () => {
-//     expect(XAlert).toBe(Alert)
-//   })
+describe('Alert/index', () => {
+  it('should be exported with withInstall()', () => {
+    expect(XAlert.install).toBeDefined()
+  })
+  it('component should be exported', () => {
+    expect(XAlert).toBe(Alert)
+  })
 
-//   // 可选
-//   it('should enhance Alert component', () => {
-//     const enhancedAlert = withInstall(Alert)
-//     expect(enhancedAlert).toBe(XAlert)
-//   })
+  // 可选
+  it('should enhance Alert component', () => {
+    const enhancedAlert = withInstall(Alert)
+    expect(enhancedAlert).toBe(XAlert)
+  })
 
-//   // 可选
-//   it('should apply specific enhance', () => {
-//     const enhancedAlert = withInstall(Alert)
-//     expect(enhancedAlert).toHaveProperty('install')
-//   })
-// })
+  // 可选
+  it('should apply specific enhance', () => {
+    const enhancedAlert = withInstall(Alert)
+    expect(enhancedAlert).toHaveProperty('install')
+  })
+})
