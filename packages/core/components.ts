@@ -5,6 +5,7 @@ import {
   XSelect,
   XCollapse,
   XCollapseItem,
+  XAlert
 } from '@x-anything/components'
 import type { Plugin } from 'vue'
 
@@ -15,4 +16,5 @@ export default [
   XSelect,
   XCollapse,
   XCollapseItem,
+  XAlert
 ] as Plugin[]
