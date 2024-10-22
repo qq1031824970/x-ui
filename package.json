@@ -41,7 +41,7 @@
     "@vue/tsconfig": "^0.5.1",
     "async-validator": "^4.2.5",
     "concurrently": "8.2.2",
-    "conventional-changelog-conventionalcommits": "8.0.0",
+    "conventional-changelog-conventionalcommits": "7.0.2",
     "cross-env": "^7.0.3",
     "cssnano": "^7.0.6",
     "dotenv-cli": "^7.4.2",
