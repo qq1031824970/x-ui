@@ -7,7 +7,7 @@ import { compression } from "vite-plugin-compression2";
 
 import shell from "shelljs";
 import vue from "@vitejs/plugin-vue";
-import hooks from "../hooksPlugin";
+import { hooksPlugin as hooks } from '@x-anything/vite-plugins'
 import terser from "@rollup/plugin-terser";
 
 const TRY_MOVE_STYLES_DELAY = 800 as const;

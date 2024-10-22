@@ -7,7 +7,7 @@ import {
   XCollapse,
   XCollapseItem,
   XIcon,
-  // XTooltip,
+  XTooltip,
 } from '..'
 import { get, map } from 'lodash-es'
 
@@ -18,7 +18,7 @@ const comps = [
   XCollapse,
   XCollapseItem,
   XIcon,
-  // XTooltip,
+  XTooltip,
 ] as Plugin[]
 
 describe('components/index', () => {
