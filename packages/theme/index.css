@@ -72,7 +72,7 @@
   --x-transition-duration: 0.4s;
   --x-transition-duration-fast: 0.2s;
 }
-
+/* 
 .fade-enter-active {
   animation: slideUpIn 0.2s;
   animation-play-state: running;
@@ -80,7 +80,7 @@
 .fade-leave-active {
   animation: slideUpIn 0.2s reverse;
   animation-play-state: running;
-}
+} */
 
 @keyframes slideUpIn {
   0% {

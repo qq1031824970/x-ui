@@ -7,7 +7,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
 import shell from "shelljs";
-import hooks from "../hooksPlugin";
+import { hooksPlugin as hooks } from '@x-anything/vite-plugins'
 import terser from "@rollup/plugin-terser";
 
 const TRY_MOVE_STYLES_DELAY = 800 as const;
@@ -80,7 +80,7 @@ export default defineConfig({
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "../index.ts"),
-      name: "ToyElement",
+      name: "XAnything",
       fileName: "index",
       formats: ["es"],
     },

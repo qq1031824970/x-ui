@@ -2,10 +2,11 @@ import {
   XButton,
   XButtonGroup,
   XIcon,
-  XSelect,
+  // XSelect,
   XCollapse,
   XCollapseItem,
-  XAlert
+  XAlert,
+  XTooltip,
 } from '@x-anything/components'
 import type { Plugin } from 'vue'
 
@@ -13,8 +14,9 @@ export default [
   XButton,
   XButtonGroup,
   XIcon,
-  XSelect,
+  // XSelect,
   XCollapse,
   XCollapseItem,
-  XAlert
+  XAlert,
+  XTooltip
 ] as Plugin[]
